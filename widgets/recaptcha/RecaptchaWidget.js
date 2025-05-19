@@ -1,7 +1,7 @@
 // RecaptchaWidget.js
 const recaptchaWidgetDefinition = {
     id: 'custom.Recaptcha',
-    version: '1.0.0',
+    version: '2.0.0',
     apiVersion: '1.0.0',
     label: 'Google reCAPTCHA',
     description: 'Verificación anti-bots con Google reCAPTCHA',
@@ -13,8 +13,8 @@ const recaptchaWidgetDefinition = {
         {
             name: 'siteKey',
             datatype: { type: 'string' },
-            label: '6Ld6zxArAAAAAPDYDDPDAOfjpZguznwnM8m5W7vd',
-            defaultValue: ''
+            label: 'Clave del sitio (SiteKey)',
+            defaultValue: '6Ld6zxArAAAAAPDYDDPDAOfjpZguznwnM8m5W7vd',
         }
     ],
     instantiate: function(context, domNode, initialProps, eventManager) {
@@ -84,5 +84,6 @@ const recaptchaWidgetDefinition = {
     }
 };
 // Registrar el widget en LEAP
-nitro.registerWidget(recaptchaWidgetDefinition.id, recaptchaWidgetDefinition);
+nitro.registerWidget(recaptchaWidgetDefinition);
+
 
