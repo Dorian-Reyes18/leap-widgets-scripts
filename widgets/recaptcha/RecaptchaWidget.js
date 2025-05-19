@@ -6,7 +6,7 @@ const recaptchaWidgetDefinition = {
     label: 'Google reCAPTCHA',
     description: 'Verificación anti-bots con Google reCAPTCHA',
     datatype: { type: 'string' },            // devuelve el token del CAPTCHA
-    category: { id: 'custom.security', label: 'Seguridad' },  // Paleta “Seguridad”
+    category: { id: 'custom.security', label: 'Avanzado' },  // Paleta “Seguridad”
     iconClassName: 'fa fa-shield-alt',       // icono (FontAwesome)
     builtInProperties: ['title', 'required'],// usa propiedad 'required' estándar
     properties: [
@@ -84,4 +84,5 @@ const recaptchaWidgetDefinition = {
     }
 };
 // Registrar el widget en LEAP
-nitro.registerWidget(recaptchaWidgetDefinition);
+nitro.registerWidget(recaptchaWidgetDefinition.id, recaptchaWidgetDefinition);
+
