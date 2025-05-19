@@ -8,7 +8,7 @@ const recaptchaWidgetDefinition = {
     datatype: { type: 'string' },            // devuelve el token del CAPTCHA
     category: { id: 'custom.security', label: 'Avanzado' },  // Paleta “Seguridad”
     iconClassName: 'fa fa-shield-alt',       // icono (FontAwesome)
-    builtInProperties: ['title', 'required'],// usa propiedad 'required' estándar
+    builtInProperties: [{id: 'required'}, {id: 'title'}],
     properties: [
         {
             name: 'siteKey',
